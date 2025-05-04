@@ -1,0 +1,282 @@
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #16213e;
+  margin-bottom: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #16213e;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(90deg, #4cc9f0 0%, #3a86ff 100%);
+  border-radius: 2px;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Objectives Grid */
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.objective-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.objective-card:hover {
+  transform: translateY(-5px);
+}
+
+.objective-icon {
+  font-size: 2rem;
+  color: #4cc9f0;
+  margin-bottom: 1rem;
+}
+
+.objective-title {
+  font-size: 1.2rem;
+  color: #16213e;
+  margin-bottom: 0.8rem;
+}
+
+.objective-text {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Technology Table */
+.tech-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tech-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.tech-row:last-child {
+  border-bottom: none;
+}
+
+.tech-cell {
+  padding: 1rem 1.5rem;
+  flex: 1;
+}
+
+.tech-cell.header {
+  background-color: #16213e;
+  color: white;
+  font-weight: bold;
+}
+
+.tech-row:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Status Table */
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.status-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.status-row:last-child {
+  border-bottom: none;
+}
+
+.status-cell {
+  padding: 1rem 1.5rem;
+}
+
+.status-cell:nth-child(1) {
+  flex: 0.3;
+}
+
+.status-cell:nth-child(2) {
+  flex: 2;
+}
+
+.status-cell:nth-child(3) {
+  flex: 0.7;
+  text-align: center;
+}
+
+.status-cell.header {
+  background-color: #16213e;
+  color: white;
+  font-weight: bold;
+}
+
+.status-row:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.status-cell.complete {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.status-cell.in-progress {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.status-cell.pending {
+  color: #95a5a6;
+  font-weight: bold;
+}
+
+/* Results Container */
+.results-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.result-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.result-label {
+  font-size: 1.1rem;
+  color: #16213e;
+  margin-bottom: 0.5rem;
+}
+
+.result-value {
+  font-size: 1.3rem;
+  color: #4cc9f0;
+  font-weight: 500;
+}
+
+/* Future List */
+.future-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.future-item {
+  padding: 1rem 1.5rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.future-item:last-child {
+  margin-bottom: 0;
+}
+
+.future-item::before {
+  content: "→";
+  position: absolute;
+  left: 1rem;
+  color: #4cc9f0;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-text {
+    font-size: 1rem;
+  }
+  
+  .tech-row, .status-row {
+    flex-direction: column;
+  }
+  
+  .tech-cell, .status-cell {
+    padding: 0.8rem;
+  }
+  
+  .status-cell:nth-child(1),
+  .status-cell:nth-child(2),
+  .status-cell:nth-child(3) {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .tech-cell.header, .status-cell.header {
+    display: none;
+  }
+  
+  .tech-cell:before, .status-cell:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+  }
+}
